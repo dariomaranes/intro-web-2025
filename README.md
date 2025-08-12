@@ -1,3 +1,3 @@
-# Intro Web
+# Introducción a la Programación Web
 
-Example description 2.0
+Proyecto con fines académicos.
