@@ -1,109 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Introducción Programación Web</title>
-    </head>
-    <body>
-        <div>
-            <h1>H1 Heading</h1>
-            <p>Lorem <strong>ipsum dolor sit amet</strong> consectetur adipisicing elit. Debitis consequatur aut explicabo totam! Rerum voluptatem, magnam quae cum neque, enim hic, amet assumenda ullam dolor atque facere necessitatibus aliquid. Ducimus.</p>
-            <a href="https://www.w3schools.com" target="_blank">This is a link to W3 schools</a>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="W3Schools.com">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="W3Schools.com">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="W3Schools.com">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="W3Schools.com">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="W3Schools.com">
-        </div>
-        <div>
-            <h2>Ordered List</h2>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Github</li>
-            </ol>
-            <hr>
-            <h2>Unordered List</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Github</li>
-            </ul>
-            <h2>Buttons List</h2>
-            <ul>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Ciudad</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Región</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Ovación</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Formulario de ejemplo</h2>
-            <form>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input id="nombre" name="nombre" type="text">
-                </div>
-                <div>
-                    <label for="lastname">Apellido</label>
-                    <input id="lastname" name="lastname" type="text">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="mail@example.com">
-                </div>
-                <div>
-                    <label for="password">Contraseña</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <div>
-                    <label for="age">Edad</label>
-                    <input type="number" name="age" id="age">
-                </div>
-                <div>
-                    <span>Sexo</span>
-                    <input type="radio" name="sex" value="M">Masculino
-                    <input type="radio" name="sex" value="F">Femenino
-                    <input type="radio" name="sex" value="N">N/A
-                </div>
-                <div>
-                    <label>País de nacimiento</label>
-                    <select name="country">
-                        <option value="ARG">Argentina</option>
-                        <option value="BR">Brasil</option>
-                        <option value="COL">Colombia</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="color">Selecciona un color</label>
-                    <input type="color" name="palette" id="palette">
-                </div>
-                <div>
-                    <label for="date">Fecha</label>
-                    <input type="date" name="date" id="date">
-                </div>
-                <div>
-                    <input type="file" name="file" id="file">
-                </div>
-                <div>
-                    <input type="hidden" name="hidden" id="hidden" value="testing">
-                </div>
-                <div>
-                    <label for="range">Rango</label>
-                    <input type="range" name="range" id="range" min="10" max="100">
-                </div>
-                <div>
-                    <label for="terms">Acepta términos</label>
-                    <input type="checkbox" name="terms" id="terms">
-                </div>
-                <div>
-                    <input type="submit" value="Enviar datos">
-                    <input type="reset" value="Reiniciar Valores">
-                </div>
-            </form>
-        </div>
-        <!-- https://www.lacapital.com.ar/turismo/turismo-bienestar-tres-destinos-reconectar-uno-mismo-n10213058.html -->
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducción Programación Web</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <span>Introduccion a la Programacion Web</span>
+      <nav>
+        <a href="https://www.w3schools.com" target="_blank"
+          >This is a link to W3 schools</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section id="section-1">
+        <article class="unordered-list">
+          <h2>Ordered List</h2>
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Github</li>
+          </ol>
+        </article>
+        <article class="unordered-list">
+          <h2>Unordered List</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Github</li>
+          </ul>
+        </article>
+        <article class="unordered-list">
+          <h2>Buttons List</h2>
+          <ul>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Ciudad</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Región</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Ovación</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section id="section-2">
+        <article class="unordered-list">
+          <h2>Ordered List</h2>
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Github</li>
+          </ol>
+        </article>
+        <article class="unordered-list">
+          <h2>Unordered List</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Github</li>
+          </ul>
+        </article>
+        <article class="unordered-list">
+          <h2>Buttons List</h2>
+          <ul>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Ciudad</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Región</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Ovación</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h2>Formulario de ejemplo</h2>
+        <form>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+          </div>
+          <div>
+            <label for="lastname">Apellido</label>
+            <input id="lastname" name="lastname" type="text" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="mail@example.com"
+            />
+          </div>
+          <div>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div>
+            <label for="age">Edad</label>
+            <input type="number" name="age" id="age" />
+          </div>
+          <div>
+            <span>Sexo</span>
+            <input type="radio" name="sex" value="M" />Masculino
+            <input type="radio" name="sex" value="F" />Femenino
+            <input type="radio" name="sex" value="N" />N/A
+          </div>
+          <div>
+            <label>País de nacimiento</label>
+            <select name="country">
+              <option value="ARG">Argentina</option>
+              <option value="BR">Brasil</option>
+              <option value="COL">Colombia</option>
+            </select>
+          </div>
+          <div>
+            <label for="color">Selecciona un color</label>
+            <input type="color" name="palette" id="palette" />
+          </div>
+          <div>
+            <label for="date">Fecha</label>
+            <input type="date" name="date" id="date" />
+          </div>
+          <div>
+            <input type="file" name="file" id="file" />
+          </div>
+          <div>
+            <input type="hidden" name="hidden" id="hidden" value="testing" />
+          </div>
+          <div>
+            <label for="range">Rango</label>
+            <input type="range" name="range" id="range" min="10" max="100" />
+          </div>
+          <div>
+            <label for="terms">Acepta términos</label>
+            <input type="checkbox" name="terms" id="terms" />
+          </div>
+          <div>
+            <input type="submit" value="Enviar datos" />
+            <input type="reset" value="Reiniciar Valores" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>UAI</footer>
+    <!-- https://www.lacapital.com.ar/turismo/turismo-bienestar-tres-destinos-reconectar-uno-mismo-n10213058.html -->
+  </body>
 </html>
