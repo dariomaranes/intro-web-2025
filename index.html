@@ -1,84 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asincronismo - Introducción Programación Web</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="script.js" defer></script> -->
+    <script src="clase-10.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manipulación del DOM - Introducción Programación Web</title>
-  <link rel="stylesheet" href="normalize.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-</head>
+  <body>
+    <header>
+      <h1>Asincronismo- Clase 10</h1>
+    </header>
 
-<body>
-  <header>
-    <h1>Manipulación del DOM - Clase 09</h1>
-  </header>
+    <main>
+      <section class="demo-section">
+        <button id="timeout">Set time out</button>
+        <button id="block">Bloquear!</button>
+        <button id="no-block">Sin bloqueo</button>
+        <button id="callback">Callback</button>
+        <button id="hellButton">Callback hell</button>
+        <button id="promise-resolved">Promise ✅</button>
+        <button id="promise-rejected">Promise ❌</button>
+        <button id="async-await">Async/Await</button>
+      </section>
+    </main>
 
-  <main>
-    <section class="demo-section">
-      <h2>1. Seleccionar Elementos</h2>
-
-      <div class="example-box">
-        <h3>getElementById()</h3>
-        <p id="texto-ejemplo">Texto con ID "texto-ejemplo"</p>
-        <button id="btn-get-by-id">Cambiar texto</button>
-      </div>
-
-      <div class="example-box">
-        <h3>getElementsByClassName()</h3>
-        <div class="destacado">Elemento 1</div>
-        <div class="destacado">Elemento 2</div>
-        <button id="btn-get-by-class">Cambiar color</button>
-      </div>
-
-      <div class="example-box">
-        <h3>querySelector()</h3>
-        <ul>
-          <li class="item">Item 1</li>
-          <li class="item">Item 2</li>
-        </ul>
-        <button id="btn-query-selector">Seleccionar primer item</button>
-      </div>
-    </section>
-
-    <section class="demo-section">
-      <h2>2. Crear y Modificar Elementos</h2>
-
-      <div class="example-box">
-        <h3>createElement() y appendChild()</h3>
-        <div id="contenedor">
-          <p>Contenedor</p>
-        </div>
-        <button id="btn-create">Añadir nuevo párrafo</button>
-      </div>
-
-      <div class="example-box">
-        <h3>removeChild()</h3>
-        <div id="lista-items">
-          <p id="item-remover">Item para remover</p>
-          <p>Item normal</p>
-        </div>
-        <button id="btn-remove">Remover item</button>
-      </div>
-    </section>
-
-    <section class="demo-section">
-      <h2>3. Event Listeners</h2>
-
-      <div class="example-box">
-        <button id="btn-click">Botón con evento click</button>
-        <input type="text" id="input-change" placeholder="Escribe algo">
-        <input type="text" id="input-blur" placeholder="Haz click aquí y luego fuera">
-        <p id="resultado">Los resultados aparecen aquí</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Clase de Manipulación del DOM - Introducción a la Programación Web</p>
-  </footer>
-
-</body>
-
+    <footer>
+      <p>Clase de Manipulación del DOM - Introducción a la Programación Web</p>
+    </footer>
+  </body>
 </html>
