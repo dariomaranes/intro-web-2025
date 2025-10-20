@@ -63,7 +63,17 @@ callBackButton.addEventListener("click", function () {
 
 // Callback Hell
 
-const hellButton = document.getElementById("hellButton");
+// getUser(userId, function(user) {
+//   getOrders(user, function(orders) {
+//     processOrders(orders, function(processed) {
+//       sendEmail(processed, function(confirmation) {
+//         console.log("Order Processed:", confirmation);
+//       });
+//     });
+//   });
+// });
+
+const hellButton = document.getElementById("hell-button");
 
 hellButton.addEventListener("click", function () {
   setTimeout(() => {
@@ -88,12 +98,14 @@ resolvePromiseBtn.addEventListener("click", function () {
     }, 2000);
   });
 
+  console.log(promise);
+
   promise
     .then((mensaje) => console.log(mensaje))
     .catch((error) => console.log(error));
 });
 
-// Promise Resolved
+// Promise Rejected
 
 const rejectPromiseBtn = document.getElementById("promise-rejected");
 
@@ -113,16 +125,31 @@ rejectPromiseBtn.addEventListener("click", function () {
 
 const asyncAwaitBtn = document.getElementById("async-await");
 
-asyncAwaitBtn.addEventListener("click", async function main() {
-  try {
-    console.log("⏳ Cargando...");
-    const response = await fetch(
-      "https://jsonplaceholder.typicode.com/todos/1"
-    );
-    const data = await response.json();
-    console.log(data);
-    console.log("✅ Listo");
-  } catch (error) {
-    console.log(error);
-  }
+// asyncAwaitBtn.addEventListener("click", async function main() {
+//   try {
+//     console.log("⏳ Cargando...");
+//     const response = await fetch(
+//       "https://jsonplaceholder.typicode.com/todos/1"
+//     );
+//     const data = await response.json();
+//     console.log(data);
+//     console.log("✅ Listo");
+//   } catch (error) {
+//     console.log(error);
+//   }
+// });
+
+asyncAwaitBtn.addEventListener("click", function () {
+  fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    }).finnaly(function() {
+      
+    });
 });
