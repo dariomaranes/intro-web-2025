@@ -94,6 +94,11 @@ footer {
   margin-top: 2rem;
 }
 
+#users-output {
+  margin-top: 0.75rem;
+  white-space: pre-wrap;
+}
+
 @media (max-width: 768px) {
   main {
     padding: 0.5rem;

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <!-- <script src="script.js" defer></script> -->
-    <script src="clase-10.js" defer></script>
+    <!-- <script src="clase-10.js" defer></script> -->
+  <script src="clase-11.js" defer></script>
   </head>
 
   <body>
@@ -16,7 +17,7 @@
     </header>
 
     <main>
-      <section class="demo-section">
+      <!-- <section class="demo-section">
         <button id="timeout">Set time out</button>
         <button id="block">Bloquear!</button>
         <button id="no-block">Sin bloqueo</button>
@@ -25,6 +26,40 @@
         <button id="promise-resolved">Promise ✅</button>
         <button id="promise-rejected">Promise ❌</button>
         <button id="async-await">Async/Await</button>
+      </section> -->
+
+      <section class="demo-section">
+        <h2>Clase 11 - HTTP. Almacenamiento Local</h2>
+        <div class="example-box">
+          <p>Mostrar usuarios en texto plano:</p>
+          <div>
+            <button id="users-then">GET con fetch(.then)</button>
+            <button id="users-async">GET con async/await</button>
+          </div>
+          <pre id="users-output"></pre>
+        </div>
+
+        <div class="example-box">
+          <h3>Almacenamiento: localStorage</h3>
+          <p>Persiste entre recargas y pestañas; se mantiene hasta que el usuario lo borre.</p>
+          <div>
+            <button id="ls-show">Mostrar</button>
+            <button id="ls-create">Crear</button>
+            <button id="ls-update">Modificar</button>
+            <button id="ls-delete">Eliminar</button>
+          </div>
+        </div>
+
+        <div class="example-box">
+          <h3>Almacenamiento: sessionStorage</h3>
+          <p>Vive solo en la pestaña actual; se borra al cerrar la pestaña/ventana.</p>
+          <div>
+            <button id="ss-show">Mostrar</button>
+            <button id="ss-create">Crear</button>
+            <button id="ss-update">Modificar</button>
+            <button id="ss-delete">Eliminar</button>
+          </div>
+        </div>
       </section>
     </main>
 
